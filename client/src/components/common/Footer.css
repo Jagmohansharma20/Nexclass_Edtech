@@ -1,0 +1,85 @@
+/* 🔷 Footer Main */
+.footer {
+  background: #1e2c4e;
+  color: #cbd5e1;
+  padding-top: 60px;
+  margin-top: 0px;
+}
+
+/* 🔷 Container */
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 0 20px 50px;
+  
+}
+.footer-section{
+    box-shadow: 1px 1px 4px white;
+    padding: 10px;
+}
+
+/* 🔷 Sections */
+.footer-section h3 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-logo {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.footer-desc {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* 🔷 List */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer-section ul li:hover {
+  color: white;
+}
+
+/* 🔷 Bottom */
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* 📱 Tablet */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-section ul li {
+    cursor: default;
+  }
+}

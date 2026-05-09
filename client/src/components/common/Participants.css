@@ -1,0 +1,32 @@
+.participant-panel{
+  position:fixed;
+  margin-left:100px;
+  top:60px;
+  width:250px;
+  height:calc(100vh - 60px);
+  background:white;
+  box-shadow:2px 0 10px rgba(0,0,0,0.2);
+  padding:15px;
+  z-index:1000;
+}
+
+.participant-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+}
+
+.participant-list{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.participant-item{
+  background-color: rgb(243, 234, 194);
+  border-radius: 0px 15px;
+  padding:8px;
+  gap:8px;
+
+}

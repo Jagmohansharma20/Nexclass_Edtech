@@ -1,0 +1,146 @@
+@keyframes colorChangetitle {
+
+  0%   { color: rgb(248, 62, 62); }
+  25%  { color: orange; }
+  50%  { color: yellow; }
+  70%  {color:rgb(70, 215, 255);}
+  100% { color: rgb(81, 239, 81); }
+
+}
+
+.herosection {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #162547, #133469);
+  color: white;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  animation: colorChangetitle 5s ease-in-out infinite;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: #cbd5e1;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+.parentdiv {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+
+.card {
+  background: #364b6e;
+  padding: 30px;
+  width: 360px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+.creatediv h2,
+.joindiv h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.creatediv p,
+.joindiv p {
+  font-size: 14px;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/*tablet */
+@media (max-width: 900px) {
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .card {
+    width: 320px;
+  }
+}
+
+/*  Mobile */
+@media (max-width: 600px) {
+  .herosection {
+    padding: 40px 15px;
+  }
+
+  .hero-title {
+    font-size: 22px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .parentdiv {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+    padding: 22px;
+  }
+  .input-field{
+    width:95%;
+  }
+}

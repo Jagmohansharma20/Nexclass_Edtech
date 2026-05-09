@@ -1,0 +1,103 @@
+.ppt-container{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+
+/* Upload */
+
+.ppt-upload{
+  padding:10px;
+  background:#1f2937;
+  color:white;
+}
+
+/* Viewer (flexible, NOT fixed height) */
+
+.ppt-viewer{
+  flex:1;                 /* 🔥 important for responsiveness */
+  min-height:0;           /* 🔥 prevents overflow bug */
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  background:#f3f4f6;
+}
+
+/* Scroll area */
+
+.ppt-scroll-box{
+  width:100%;
+  max-width:900px;
+  height:100%;
+  overflow-y:auto;
+  overflow-x:hidden;      /* ✅ FIX horizontal scroll */
+  padding:10px;
+  box-sizing:border-box;  /* ✅ prevents width overflow */
+}
+
+/* PDF wrapper */
+
+.react-pdf__Document{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+/* Page */
+
+.react-pdf__Page{
+  display:flex;
+  justify-content:center;
+  width:100%;
+  max-width:100%;
+}
+
+/* Canvas (MAIN FIX) */
+
+.react-pdf__Page canvas{
+  max-width:100% !important;  /* 🔥 prevent overflow */
+  height:auto !important;
+}
+
+/* Controls */
+
+.ppt-controls{
+  padding:10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:20px;
+  background:#e5e7eb;
+  flex-wrap:wrap;           /* ✅ mobile friendly */
+}
+
+.ppt-controls button{
+  padding:8px 14px;
+  border:none;
+  background:#2563eb;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+/* Mobile Fix */
+
+@media (max-width:768px){
+
+  .ppt-upload{
+    text-align:center;
+  }
+
+  .ppt-scroll-box{
+    padding:5px;           /* less padding on mobile */
+  }
+
+  .ppt-controls{
+    gap:10px;
+  }
+
+}
+

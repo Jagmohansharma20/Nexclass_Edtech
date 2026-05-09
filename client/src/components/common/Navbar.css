@@ -1,0 +1,82 @@
+/* 🔷 Navbar Container */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+  /* background: linear-gradient(90deg, #071b48, #063581); */
+  background-color: rgba(13, 21, 92, 0.751);
+  color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  box-shadow: 3px 4px 9px rgb(245, 235, 235);
+  border-bottom: 1px solid white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  
+}
+
+/* 🔷 Logo */
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* 🔷 Button Group */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;  /* ⭐ SPACE BETWEEN BUTTONS */
+  
+}
+
+/* 🔷 Buttons */
+.nav-btn {
+  background-color: #fbfbfb;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: rgb(11, 5, 5);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  
+}
+
+/* Hover */
+.nav-btn:hover {
+  background-color: #bdc5dd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
+}
+
+/* Click */
+.nav-btn:active {
+  transform: scale(0.96);
+}
+
+/* 📱 Responsive */
+@media (max-width: 368px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .nav-buttons {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-btn {
+    flex: 1;
+    max-width: 120px;
+  }
+}

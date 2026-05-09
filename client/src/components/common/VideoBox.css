@@ -1,0 +1,26 @@
+.video-box{
+  position:fixed;
+  width:250px;
+  height:200px;
+  background:black;
+  border-radius:8px;
+  overflow:hidden;
+  z-index:1000;
+}
+
+.video-header{
+  height:30px;
+  background:#222;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 10px;
+  cursor:move;
+}
+
+.video-player{
+  width:100%;
+  height:calc(100% - 30px);
+  object-fit:cover;
+}
